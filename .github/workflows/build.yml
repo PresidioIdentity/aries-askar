@@ -431,7 +431,7 @@ jobs:
     if: |
       (github.event_name == 'release' ||
       (github.event_name == 'workflow_dispatch' &&
-       github.event.inputs.publish == 'true'))
+       github.event.inputs.publish-binaries == 'true'))
 
     steps:
       - name: Fetch Android libraries
